@@ -1046,4 +1046,747 @@ CTION HISTOIRE ===== */
         text-align: center;
         gap: 0.5rem;
     }
+}/* ===== S
+ECTION GÉOGRAPHIE ET ENVIRONNEMENT ===== */
+.geography-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #FEFEFE, var(--kasai-ivoire));
+    position: relative;
+}
+
+.geography-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.geography-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--kasai-terre);
+    font-style: italic;
+    margin-top: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.geography-subtitle i {
+    color: var(--kasai-vert);
+    margin-right: 0.5rem;
+}
+
+/* Sections géographiques */
+.geo-section {
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+}
+
+.geo-section.reverse .geo-content {
+    flex-direction: row-reverse;
+}
+
+.geo-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.geo-text {
+    flex: 1;
+}
+
+.geo-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.geo-text h3 i {
+    color: var(--kasai-vert);
+}
+
+.geo-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.geo-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Localisation - Frontières */
+.borders-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.border-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.border-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.border-item i {
+    color: var(--kasai-terre);
+    font-size: 1.2rem;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, var(--kasai-vert), #4A9B6B);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.map-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+/* Relief et paysages */
+.landscape-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.landscape-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 3px solid var(--kasai-terre);
+}
+
+.landscape-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.landscape-item i {
+    font-size: 2rem;
+    color: var(--kasai-vert);
+    margin-bottom: 1rem;
+}
+
+.landscape-item span {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.landscape-features {
+    list-style: none;
+    padding: 0;
+}
+
+.landscape-features li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    background: var(--kasai-ivoire);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.landscape-features li:hover {
+    background: #F0F0F0;
+    transform: translateX(5px);
+}
+
+.landscape-features i {
+    color: var(--kasai-vert);
+    width: 20px;
+}
+
+/* Hydrographie */
+.rivers-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.river-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.river-item.main-river {
+    border-left: 4px solid var(--kasai-bleu);
+    background: linear-gradient(135deg, #F8F9FA, var(--kasai-ivoire));
+}
+
+.river-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.river-item i {
+    color: var(--kasai-bleu);
+    font-size: 1.2rem;
+}
+
+.river-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.river-item strong {
+    color: var(--kasai-bleu);
+    font-size: 1.1rem;
+}
+
+.river-item span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.water-features {
+    display: grid;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.water-benefit {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 3px solid var(--kasai-bleu);
+}
+
+.water-benefit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.water-benefit i {
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 0.8rem;
+}
+
+.water-benefit span {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Climat */
+.climate-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 3rem 0;
+}
+
+.climate-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.climate-section h3 i {
+    color: var(--kasai-or);
+}
+
+.climate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.season-card {
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.season-card.rainy {
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    border-top: 4px solid #2196F3;
+}
+
+.season-card.dry {
+    background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+    border-top: 4px solid #FF9800;
+}
+
+.season-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.season-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+}
+
+.season-card.rainy .season-icon {
+    background: #2196F3;
+    color: white;
+}
+
+.season-card.dry .season-icon {
+    background: #FF9800;
+    color: white;
+}
+
+.season-card h4 {
+    font-size: 1.3rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 0.5rem;
+}
+
+.season-period {
+    font-weight: 600;
+    color: var(--kasai-terre);
+    margin-bottom: 1rem;
+}
+
+.climate-details {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.climate-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+.climate-item i {
+    color: var(--kasai-vert);
+}
+
+/* Sols et végétation */
+.soil-types {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.soil-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.soil-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.soil-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.soil-color.red {
+    background: #A0522D;
+}
+
+.soil-color.brown {
+    background: #8B4513;
+}
+
+.soil-color.yellow {
+    background: #DAA520;
+}
+
+.soil-item strong {
+    color: var(--kasai-bleu);
+    font-size: 1rem;
+}
+
+.soil-item span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.vegetation-types {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.veg-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 3px solid var(--kasai-vert);
+}
+
+.veg-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.veg-item i {
+    font-size: 1.8rem;
+    color: var(--kasai-vert);
+    margin-bottom: 0.8rem;
+}
+
+.veg-item span {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Faune */
+.fauna-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 3rem 0;
+}
+
+.fauna-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.fauna-section h3 i {
+    color: var(--kasai-terre);
+}
+
+.fauna-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.fauna-category {
+    background: var(--kasai-ivoire);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--kasai-vert);
+}
+
+.fauna-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fauna-category i {
+    font-size: 2.5rem;
+    color: var(--kasai-terre);
+    margin-bottom: 1rem;
+}
+
+.fauna-category h4 {
+    font-size: 1.2rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 1rem;
+}
+
+.fauna-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fauna-category li {
+    padding: 0.3rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Défis environnementaux */
+.challenges-section {
+    background: linear-gradient(135deg, #FFF5F5, #FFEBEE);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 3rem 0;
+    border-left: 5px solid #F44336;
+}
+
+.challenges-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.challenges-section h3 i {
+    color: #F44336;
+}
+
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.challenge-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid #F44336;
+}
+
+.challenge-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.challenge-item i {
+    font-size: 2rem;
+    color: #F44336;
+    margin-bottom: 1rem;
+}
+
+.challenge-item h4 {
+    font-size: 1.2rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 1rem;
+}
+
+.challenge-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Potentiel à valoriser */
+.potential-section {
+    background: linear-gradient(135deg, var(--kasai-vert), #4A9B6B);
+    padding: 3rem;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.potential-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.potential-content h3 i {
+    color: var(--kasai-or);
+}
+
+.potential-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.solution-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.solution-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.solution-item i {
+    font-size: 1.8rem;
+    color: var(--kasai-or);
+    margin-bottom: 0.8rem;
+}
+
+.solution-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Proverbe Luba */
+.luba-proverb {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    margin-top: 2rem;
+}
+
+.luba-proverb .fa-quote-left {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--kasai-or);
+    opacity: 0.7;
+}
+
+.luba-proverb .fa-quote-right {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--kasai-or);
+    opacity: 0.7;
+}
+
+.luba-proverb p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0 0 0.5rem 0;
+    padding: 0 2rem;
+}
+
+.luba-proverb cite {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-style: normal;
+}
+
+/* Responsive Géographie */
+@media (max-width: 768px) {
+    .geo-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .geo-section.reverse .geo-content {
+        flex-direction: column;
+    }
+    
+    .landscape-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .climate-grid,
+    .fauna-grid,
+    .challenges-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .map-placeholder {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .geography-section {
+        padding: 4rem 0;
+    }
+    
+    .geo-section {
+        padding: 2rem 0;
+    }
+    
+    .climate-section,
+    .fauna-section,
+    .challenges-section,
+    .potential-section {
+        padding: 2rem;
+    }
+    
+    .solutions-grid {
+        grid-template-columns: 1fr;
+    }
 }
