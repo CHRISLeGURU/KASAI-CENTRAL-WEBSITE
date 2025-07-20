@@ -1789,4 +1789,732 @@ ECTION GÉOGRAPHIE ET ENVIRONNEMENT ===== */
     .solutions-grid {
         grid-template-columns: 1fr;
     }
+}/*
+ ===== SECTION POPULATION ET CULTURE ===== */
+.culture-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #FEFEFE, var(--kasai-ivoire));
+    position: relative;
+}
+
+.culture-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="luba-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="2" fill="%23A0522D" opacity="0.03"/><path d="M10,10 L40,40 M40,10 L10,40" stroke="%233B7A57" stroke-width="0.5" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23luba-pattern)"/></svg>');
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.culture-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.culture-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--kasai-terre);
+    font-style: italic;
+    margin-top: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.culture-subtitle i {
+    color: var(--kasai-vert);
+    margin-right: 0.5rem;
+}
+
+/* Introduction démographique */
+.population-intro {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.population-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--kasai-terre);
+}
+
+.population-text {
+    flex: 2;
+}
+
+.population-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.population-text h3 i {
+    color: var(--kasai-terre);
+}
+
+.population-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.population-text strong {
+    color: var(--kasai-terre);
+    font-weight: 600;
+}
+
+.population-visual {
+    flex: 1;
+}
+
+.population-stats {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.stat-item {
+    background: linear-gradient(135deg, var(--kasai-vert), #4A9B6B);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--kasai-or);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+/* Langues parlées */
+.languages-section {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.languages-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.languages-section h3 i {
+    color: var(--kasai-vert);
+}
+
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.language-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.language-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    transition: all 0.3s ease;
+}
+
+.language-card.primary::before {
+    background: linear-gradient(90deg, var(--kasai-terre), var(--kasai-or));
+}
+
+.language-card.official::before {
+    background: linear-gradient(90deg, var(--kasai-bleu), #34495e);
+}
+
+.language-card.secondary::before {
+    background: linear-gradient(90deg, var(--kasai-vert), #4A9B6B);
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.language-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.language-card.primary .language-icon {
+    background: linear-gradient(135deg, var(--kasai-terre), var(--kasai-or));
+}
+
+.language-card.official .language-icon {
+    background: linear-gradient(135deg, var(--kasai-bleu), #34495e);
+}
+
+.language-card.secondary .language-icon {
+    background: linear-gradient(135deg, var(--kasai-vert), #4A9B6B);
+}
+
+.language-card h4 {
+    font-size: 1.3rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.language-status {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.language-card.primary .language-status {
+    background: rgba(160, 82, 45, 0.1);
+    color: var(--kasai-terre);
+}
+
+.language-card.official .language-status {
+    background: rgba(44, 62, 80, 0.1);
+    color: var(--kasai-bleu);
+}
+
+.language-card.secondary .language-status {
+    background: rgba(59, 122, 87, 0.1);
+    color: var(--kasai-vert);
+}
+
+.language-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Traditions et expressions culturelles */
+.traditions-section {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.traditions-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.traditions-section h3 i {
+    color: var(--kasai-terre);
+}
+
+.traditions-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.cultural-expressions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.expression-category {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--kasai-vert);
+}
+
+.expression-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.expression-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--kasai-ivoire);
+}
+
+.expression-header i {
+    font-size: 1.8rem;
+    color: var(--kasai-terre);
+}
+
+.expression-header h4 {
+    font-size: 1.3rem;
+    color: var(--kasai-bleu);
+    font-weight: 600;
+}
+
+.expression-items {
+    display: grid;
+    gap: 1rem;
+}
+
+.expression-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--kasai-ivoire);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.expression-item:hover {
+    background: #F0F0F0;
+    transform: translateX(5px);
+}
+
+.expression-item i {
+    color: var(--kasai-vert);
+    font-size: 1.2rem;
+    width: 25px;
+    text-align: center;
+}
+
+.expression-item strong {
+    color: var(--kasai-bleu);
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.expression-item span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Religion et croyances */
+.religion-section {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.religion-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.religion-section h3 i {
+    color: var(--kasai-or);
+}
+
+.religion-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.religion-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.religion-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.beliefs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.belief-card {
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.belief-card.modern {
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    border-top: 4px solid #2196F3;
+}
+
+.belief-card.traditional {
+    background: linear-gradient(135deg, #E8F5E8, #C8E6C9);
+    border-top: 4px solid var(--kasai-vert);
+}
+
+.belief-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.belief-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.belief-card.modern .belief-icon {
+    background: #2196F3;
+}
+
+.belief-card.traditional .belief-icon {
+    background: var(--kasai-vert);
+}
+
+.belief-card h4 {
+    font-size: 1.3rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.belief-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.belief-details {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.belief-card.modern .belief-details {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+}
+
+.belief-card.traditional .belief-details {
+    background: rgba(59, 122, 87, 0.1);
+    color: var(--kasai-vert);
+}
+
+/* Artisanat et savoir-faire */
+.crafts-section {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.crafts-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--kasai-bleu);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.crafts-section h3 i {
+    color: var(--kasai-terre);
+}
+
+.crafts-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.crafts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.craft-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--kasai-terre);
+    position: relative;
+    overflow: hidden;
+}
+
+.craft-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(160, 82, 45, 0.05), transparent);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.craft-item:hover::before {
+    top: -10%;
+    right: -10%;
+}
+
+.craft-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.craft-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--kasai-terre), var(--kasai-or));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.craft-item h4 {
+    font-size: 1.3rem;
+    color: var(--kasai-bleu);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.craft-item p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.craft-tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.craft-tag {
+    background: var(--kasai-ivoire);
+    color: var(--kasai-terre);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(160, 82, 45, 0.2);
+}
+
+/* Citation culturelle */
+.culture-quote {
+    text-align: center;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.culture-quote blockquote {
+    background: linear-gradient(135deg, var(--kasai-bleu), #34495e);
+    color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.culture-quote blockquote::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: var(--kasai-bleu);
+}
+
+.culture-quote .fa-quote-left {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 2rem;
+    color: var(--kasai-or);
+    opacity: 0.7;
+}
+
+.culture-quote .fa-quote-right {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: var(--kasai-or);
+    opacity: 0.7;
+}
+
+.culture-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0;
+    padding: 0 3rem;
+}
+
+/* Responsive Culture */
+@media (max-width: 768px) {
+    .population-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .languages-grid,
+    .cultural-expressions,
+    .beliefs-grid,
+    .crafts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .population-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.4rem;
+    }
+    
+    .culture-quote p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .culture-section {
+        padding: 4rem 0;
+    }
+    
+    .population-content,
+    .religion-content {
+        padding: 2rem;
+    }
+    
+    .population-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .expression-category,
+    .craft-item {
+        padding: 2rem;
+    }
+    
+    .culture-quote blockquote {
+        padding: 2rem;
+    }
 }
