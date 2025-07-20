@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goma - Découvrez la Perle des Grands Lacs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌋 Goma</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#hebergement">Hébergement</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="mode-switch" type="button" class="nav-cta">
+                <i class="fas fa-moon"></i> Mode Jour
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop class="hero-video active" id="night-video">
+                <source src="images/gom-video-lake.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop class="hero-video" id="day-video">
+                <source src="images/goma-volcano-day.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Découvrez la <span class="highlight">perle des Grands Lacs</span><br>
+                au cœur de l'Afrique
+            </h1>
+            <p class="hero-description">
+                Goma vous invite à explorer ses merveilles naturelles exceptionnelles :
+                le majestueux lac Kivu, le volcan Nyiragongo et sa culture vibrante.
+                Plongez dans une expérience unique où nature sauvage et hospitalité se rencontrent.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">
+                    <i class="btn-icon fas fa-mountain"></i>
+                    Explorer les sites
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="btn-icon fas fa-bed"></i>
+                    Réserver un séjour
+                </button>
+                <button class="btn btn-tertiary">
+                    <i class="btn-icon fas fa-camera"></i>
+                    Galerie photos
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
