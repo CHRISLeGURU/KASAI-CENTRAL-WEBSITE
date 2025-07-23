@@ -18,9 +18,7 @@ const CTA = () => {
     <section className="section-padding bg-gradient-to-br from-kasai-bleu via-blue-800 to-kasai-bleu relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, ${kasai.or}40 0%, transparent 50%), radial-gradient(circle at 75% 75%, ${kasai.vert}40 0%, transparent 50%)`
-        }}></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-kasai-or/20 via-transparent to-kasai-vert/20"></div>
       </div>
 
       {/* Floating elements */}
