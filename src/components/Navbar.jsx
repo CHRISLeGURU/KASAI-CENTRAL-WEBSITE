@@ -22,19 +22,17 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white/90 backdrop-blur-md shadow-lg' 
-        : 'bg-transparent'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+      ? 'bg-white/90 backdrop-blur-md shadow-lg'
+      : 'bg-transparent'
+      }`}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Gem className={`w-8 h-8 ${isScrolled ? 'text-kasai-or' : 'text-white'}`} />
-            <span className={`text-xl md:text-2xl font-bold ${
-              isScrolled ? 'text-kasai-bleu' : 'text-white'
-            }`}>
+            <span className={`text-xl md:text-2xl font-bold ${isScrolled ? 'text-kasai-bleu' : 'text-white'
+              }`}>
               Kasaï-Central
             </span>
           </div>
@@ -45,11 +43,10 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className={`font-medium transition-colors duration-200 hover:scale-105 ${
-                  isScrolled 
-                    ? 'text-gray-700 hover:text-kasai-or' 
-                    : 'text-white/90 hover:text-white'
-                }`}
+                className={`font-medium transition-colors duration-200 hover:scale-105 ${isScrolled
+                  ? 'text-gray-700 hover:text-kasai-or'
+                  : 'text-white/90 hover:text-white'
+                  }`}
               >
                 {item.name}
               </a>
@@ -63,9 +60,8 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md ${
-                isScrolled ? 'text-kasai-bleu' : 'text-white'
-              }`}
+              className={`p-2 rounded-md ${isScrolled ? 'text-kasai-bleu' : 'text-white'
+                }`}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>

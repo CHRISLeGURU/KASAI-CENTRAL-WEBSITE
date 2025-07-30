@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Gem, Masks, TreePine, Play } from 'lucide-react'
+import { Gem, Palette, TreePine, Play } from 'lucide-react'
 
 const Hero = () => {
   const [currentVideo, setCurrentVideo] = useState(0)
@@ -16,7 +16,7 @@ const Hero = () => {
       hoverColor: 'hover:from-blue-600 hover:to-blue-700'
     },
     {
-      icon: Masks,
+      icon: Palette,
       text: 'Culture Luba',
       color: 'from-kasai-or to-yellow-500',
       hoverColor: 'hover:from-yellow-500 hover:to-yellow-600'

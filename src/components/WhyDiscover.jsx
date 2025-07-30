@@ -1,5 +1,5 @@
 import React from 'react'
-import { Crown, Masks, Gem, GraduationCap } from 'lucide-react'
+import { Crown, Palette, Gem, GraduationCap } from 'lucide-react'
 
 const WhyDiscover = () => {
   const features = [
@@ -10,7 +10,7 @@ const WhyDiscover = () => {
       color: 'from-kasai-or to-yellow-500'
     },
     {
-      icon: Masks,
+      icon: Palette,
       title: 'Un vivier culturel',
       description: 'Artisanat raffiné, danses comme le mutuashi, traditions orales ancestrales.',
       color: 'from-purple-500 to-purple-600'
@@ -74,7 +74,7 @@ const WhyDiscover = () => {
             <div className="aspect-square bg-gradient-to-br from-kasai-terre to-kasai-or rounded-3xl flex items-center justify-center text-white p-8 shadow-2xl">
               <div className="text-center">
                 <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <Masks className="w-12 h-12" />
+                  <Palette className="w-12 h-12" />
                 </div>
                 <p className="text-lg font-medium opacity-90">
                   Image : Femme tressant du raphia ou paysage de rivière

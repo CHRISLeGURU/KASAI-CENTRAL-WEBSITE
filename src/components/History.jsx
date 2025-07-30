@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Crown, Chain, Flag, Building, Star, Flame, Sprout } from 'lucide-react'
+import { Crown, Link, Flag, Building, Star, Flame, Sprout } from 'lucide-react'
 
 const History = () => {
   const [activeEvent, setActiveEvent] = useState(0)
@@ -18,7 +18,7 @@ const History = () => {
       color: 'from-kasai-or to-yellow-500'
     },
     {
-      icon: Chain,
+      icon: Link,
       date: '1885–1960',
       title: 'L\'ombre de la colonisation',
       description: 'À la fin du XIXe siècle, le territoire est intégré de force à l\'État indépendant du Congo.',
