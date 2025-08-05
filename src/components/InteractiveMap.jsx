@@ -9,11 +9,11 @@ const InteractiveMap = () => {
     { id: 2, name: 'Dibaya', position: { top: '18%', right: '8%' }, info: 'Territoire du nord-est' },
     { id: 3, name: 'Kazumba', position: { bottom: '25%', left: '12%' }, info: 'Territoire du sud-ouest' },
     { id: 4, name: 'Luiza', position: { bottom: '18%', right: '5%' }, info: 'Territoire du sud-est' },
-    { id: 5, name: 'Tshimbulu', position: { top: '42%', right: '20%' }, info: 'Territoire central-est' }
+    { id: 5, name: ' Dimbelenge', position: { top: '42%', right: '20%' }, info: 'Territoire central-est' }
   ]
 
   return (
-    <section className="section-padding bg-gradient-to-br from-kasai-ivoire/20 to-white">
+    <section id="territoires" className="section-padding bg-gradient-to-br from-kasai-ivoire/20 to-white">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h3 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-6 flex items-center justify-center gap-4">
@@ -25,13 +25,13 @@ const InteractiveMap = () => {
 
         <div className="max-w-5xl mx-auto">
           <div className="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 md:p-12 shadow-2xl border border-kasai-or/20 hover:shadow-3xl transition-all duration-500 hover:-translate-y-2">
-            
+
             {/* Decorative border animation */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-kasai-or via-kasai-vert to-kasai-terre opacity-0 hover:opacity-20 transition-opacity duration-500 -z-10"></div>
-            
+
             {/* Map container */}
             <div className="relative h-96 md:h-[500px] bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl border-3 border-dashed border-kasai-or/40 overflow-hidden hover:border-kasai-or/60 transition-colors duration-300">
-              
+
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-1/4 left-1/4 w-8 h-8 bg-kasai-or rounded-full animate-pulse"></div>
@@ -46,7 +46,7 @@ const InteractiveMap = () => {
                     <Star className="w-6 h-6" />
                     <span className="font-bold text-lg">Kananga</span>
                   </div>
-                  
+
                   {/* Capital info tooltip */}
                   <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                     <div className="bg-kasai-bleu text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap">
@@ -122,12 +122,13 @@ const InteractiveMap = () => {
               <div className="text-sm text-gray-600">km²</div>
             </div>
             <div className="card-modern text-center p-4 hover:scale-105 transition-transform duration-300">
-              <div className="text-2xl font-bold text-kasai-terre">3.3M</div>
+              <div className="text-2xl font-bold text-kasai-terre">± 4M</div>
               <div className="text-sm text-gray-600">Habitants</div>
             </div>
           </div>
-        </div>
+        </div>`
       </div>
+
     </section>
   )
 }

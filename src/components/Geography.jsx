@@ -30,7 +30,7 @@ const Geography = () => {
   ]
 
   return (
-    <section className="section-padding bg-gradient-to-br from-white to-kasai-ivoire/30">
+    <section id="geographie" className="section-padding bg-gradient-to-br from-white to-kasai-ivoire/30">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-6">
@@ -51,17 +51,17 @@ const Geography = () => {
               Localisation stratégique
             </h3>
             <p className="text-base text-gray-600 leading-relaxed">
-             {/* * Située dans la partie centrale-sud de la République Démocratique du Congo, la province du
+              {/* * Située dans la partie centrale-sud de la République Démocratique du Congo, la province du
               Kasaï-Central est enclavée entre les provinces voisines, avec Kananga comme carrefour
               stratégique à environ 1 000 km de Kinshasa.*/}
               Située au cœur géographique de la République Démocratique du Congo, la province du Kasaï-Central occupe une position charnière entre plusieurs régions du pays. Elle se trouve dans la partie centre-sud, à la croisée des provinces du Kasaï, Kasaï-Oriental, Lomami et Sankuru, ce qui lui confère un rôle de carrefour administratif, économique et culturel au sein du Grand Kasaï.
 
-Son chef-lieu, Kananga, est situé à environ 1 000 km à l’est de Kinshasa, la capitale nationale. Malgré son enclavement relatif, Kananga est un nœud stratégique sur le plan des communications.
+              Son chef-lieu, Kananga, est situé à environ 1 000 km à l’est de Kinshasa, la capitale nationale. Malgré son enclavement relatif, Kananga est un nœud stratégique sur le plan des communications.
             </p>
 
             <p className="text-base text-gray-600 leading-relaxed">
               Kananga est traversée par la Route Nationale 1 (RN1), un axe vital du pays qui relie l’Est au centre-ouest. La Route Nationale 20 (RN20) permet également d’atteindre les territoires ruraux environnants.
-            Elle est connectée à la ligne de chemin de fer de la SNCC (Société Nationale des Chemins de fer du Congo), qui relie Lubumbashi, Ilebo et Mbuji-Mayi. Cette voie ferrée est un atout stratégique pour le transit de marchandises agricoles et minières.</p>
+              Elle est connectée à la ligne de chemin de fer de la SNCC (Société Nationale des Chemins de fer du Congo), qui relie Lubumbashi, Ilebo et Mbuji-Mayi. Cette voie ferrée est un atout stratégique pour le transit de marchandises agricoles et minières.</p>
 
             <div className="space-y-4">
               {borders.map((border, index) => {
@@ -152,18 +152,17 @@ Son chef-lieu, Kananga, est situé à environ 1 000 km à l’est de Kinshasa, l
 
             <div className="space-y-4">
               {rivers.map((river, index) => (
-                <div key={index} className={`p-4 rounded-xl ${river.isMain
-                  ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white'
-                  : 'bg-white border border-blue-200'
-                  } transition-all duration-300 hover:shadow-lg`}>
+                <div key={index} className="group bg-white border border-gray-200 p-4 rounded-xl transition-all duration-300 hover:bg-blue-500 hover:shadow-lg hover:scale-105 cursor-pointer">
                   <div className="flex items-center space-x-3">
-                    <Droplets className={`w-5 h-5 ${river.isMain ? 'text-white' : 'text-blue-500'}`} />
-                    <div>
-                      <span className={`font-semibold ${river.isMain ? 'text-white' : 'text-kasai-bleu'}`}>
+                    <Droplets className="w-5 h-5 text-blue-500 group-hover:text-white transition-colors duration-300" />
+                    <div className="flex-1">
+                      <span className="font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">
                         {river.name}
                       </span>
                       {river.isMain && (
-                        <p className="text-blue-100 text-sm mt-1">{river.description}</p>
+                        <p className="text-gray-600 group-hover:text-blue-100 text-sm mt-1 transition-colors duration-300">
+                          {river.description}
+                        </p>
                       )}
                     </div>
                   </div>

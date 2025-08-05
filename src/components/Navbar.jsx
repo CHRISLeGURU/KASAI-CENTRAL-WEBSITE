@@ -15,10 +15,10 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Accueil', href: '#accueil' },
-    { name: 'Attractions', href: '#attractions' },
-    { name: 'Culture', href: '#culture' },
-    { name: 'Hébergement', href: '#hebergement' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Présentation', href: '#presentation' },
+    { name: 'Territoires', href: '#territoires' },
+    { name: 'Géographie', href: '#geographie' },
+    { name: 'Histoire', href: '#histoire' },
   ]
 
   return (
@@ -52,7 +52,7 @@ const Navbar = () => {
               </a>
             ))}
             <button className="btn-primary">
-              Planifier ma visite
+            Tukeyenu bimpe !🎉
             </button>
           </div>
 

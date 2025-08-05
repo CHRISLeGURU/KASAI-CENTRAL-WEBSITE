@@ -79,11 +79,11 @@ const CTA = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="group bg-gradient-to-r from-kasai-terre to-orange-600 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-full font-semibold text-base transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2 min-w-[180px] justify-center">
+            <a href="#accueil" className="group bg-gradient-to-r from-kasai-terre to-orange-600 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-full font-semibold text-base transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2 min-w-[180px] justify-center">
               <Compass className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-              <span>Commencer la visite</span>
-            </button>
-
+              <span>Retour à l’accueil</span>
+            </a>
+            
             <button className="group bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 hover:border-white/50 text-white px-6 py-3 rounded-full font-semibold text-base transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2 min-w-[180px] justify-center">
               <Download className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               <span>Guide touristique</span>

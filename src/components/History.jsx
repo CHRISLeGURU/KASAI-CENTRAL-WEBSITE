@@ -92,7 +92,7 @@ const History = () => {
   ]
 
   return (
-    <section className="section-padding bg-gradient-to-br from-kasai-ivoire/20 to-white">
+    <section id="histoire" className="section-padding bg-gradient-to-br from-kasai-ivoire/20 to-white">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-6">
