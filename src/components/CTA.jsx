@@ -44,14 +44,16 @@ const CTA = () => {
           </div>
 
           {/* Main heading */}
-          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-light mb-6 leading-tight">
-            Une province méconnue mais pleine de{' '}
-            <span className="bg-gradient-to-r from-kasai-or to-yellow-400 bg-clip-text text-transparent font-medium">
+          <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-light mb-6 leading-tight tracking-wide italic">
+            Une province méconnue<br />
+            mais pleine de{' '}
+            <span className="bg-gradient-to-r from-kasai-or to-yellow-400 bg-clip-text text-transparent font-semibold not-italic">
               promesses
-            </span>{' '}
+            </span>
+            <br />
             vous attend
           </h2>
-          <h2>teeddggd</h2>
+
 
           {/* Description */}
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">

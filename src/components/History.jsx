@@ -95,7 +95,7 @@ const History = () => {
     <section className="section-padding bg-gradient-to-br from-kasai-ivoire/20 to-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-kasai-bleu mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-6">
             Histoire de la Province du Kasaï-Central
           </h2>
           <p className="text-xl text-kasai-terre italic max-w-4xl mx-auto">

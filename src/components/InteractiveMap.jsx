@@ -16,7 +16,7 @@ const InteractiveMap = () => {
     <section className="section-padding bg-gradient-to-br from-kasai-ivoire/20 to-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h3 className="font-playfair text-4xl md:text-5xl font-bold text-kasai-bleu mb-6 flex items-center justify-center gap-4">
+          <h3 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-6 flex items-center justify-center gap-4">
             <Globe className="w-12 h-12 text-kasai-or" />
             Organisation territoriale du Kasaï-Central
           </h3>

@@ -33,7 +33,7 @@ const Geography = () => {
     <section className="section-padding bg-gradient-to-br from-white to-kasai-ivoire/30">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-kasai-bleu mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-6">
             Géographie et Environnement du Kasaï-Central
           </h2>
           <p className="text-xl text-kasai-terre italic max-w-4xl mx-auto flex items-center justify-center gap-2">
@@ -44,18 +44,25 @@ const Geography = () => {
         </div>
 
         {/* Localisation stratégique */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
           <div className="space-y-6">
             <h3 className="font-playfair text-3xl font-bold text-kasai-bleu flex items-center gap-3">
               <Globe className="w-8 h-8 text-kasai-vert" />
               Localisation stratégique
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Située dans la partie centrale-sud de la République Démocratique du Congo, la province du
+            <p className="text-base text-gray-600 leading-relaxed">
+             {/* * Située dans la partie centrale-sud de la République Démocratique du Congo, la province du
               Kasaï-Central est enclavée entre les provinces voisines, avec Kananga comme carrefour
-              stratégique à environ 1 000 km de Kinshasa.
+              stratégique à environ 1 000 km de Kinshasa.*/}
+              Située au cœur géographique de la République Démocratique du Congo, la province du Kasaï-Central occupe une position charnière entre plusieurs régions du pays. Elle se trouve dans la partie centre-sud, à la croisée des provinces du Kasaï, Kasaï-Oriental, Lomami et Sankuru, ce qui lui confère un rôle de carrefour administratif, économique et culturel au sein du Grand Kasaï.
+
+Son chef-lieu, Kananga, est situé à environ 1 000 km à l’est de Kinshasa, la capitale nationale. Malgré son enclavement relatif, Kananga est un nœud stratégique sur le plan des communications.
             </p>
-            
+
+            <p className="text-base text-gray-600 leading-relaxed">
+              Kananga est traversée par la Route Nationale 1 (RN1), un axe vital du pays qui relie l’Est au centre-ouest. La Route Nationale 20 (RN20) permet également d’atteindre les territoires ruraux environnants.
+            Elle est connectée à la ligne de chemin de fer de la SNCC (Société Nationale des Chemins de fer du Congo), qui relie Lubumbashi, Ilebo et Mbuji-Mayi. Cette voie ferrée est un atout stratégique pour le transit de marchandises agricoles et minières.</p>
+
             <div className="space-y-4">
               {borders.map((border, index) => {
                 const Icon = border.icon
@@ -70,11 +77,24 @@ const Geography = () => {
             </div>
           </div>
 
-          <div className="card-modern bg-gradient-to-br from-kasai-vert to-green-600 text-white text-center p-8">
-            <Globe className="w-24 h-24 mx-auto mb-6 opacity-80" />
-            <p className="text-lg font-medium">
-              Carte du Kasaï-Central et provinces limitrophes
-            </p>
+          <div className="relative">
+            <div className="card-modern overflow-hidden p-0">
+              <img
+                src="/images/kasai-.png"
+                alt="Carte du Kasaï-Central et provinces limitrophes"
+                className="w-full h-auto object-contain rounded-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-2xl"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <div className="flex items-center gap-3 mb-2">
+                  <Globe className="w-6 h-6 text-kasai-or" />
+                  <h4 className="font-semibold text-lg">Localisation géographique</h4>
+                </div>
+                <p className="text-sm text-white/90">
+                  Carte du Kasaï-Central et provinces limitrophes
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -129,14 +149,13 @@ const Geography = () => {
               La province est arrosée par plusieurs cours d'eau importants, qui alimentent les sols
               agricoles et servent à la pêche artisanale.
             </p>
-            
+
             <div className="space-y-4">
               {rivers.map((river, index) => (
-                <div key={index} className={`p-4 rounded-xl ${
-                  river.isMain 
-                    ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white' 
-                    : 'bg-white border border-blue-200'
-                } transition-all duration-300 hover:shadow-lg`}>
+                <div key={index} className={`p-4 rounded-xl ${river.isMain
+                  ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white'
+                  : 'bg-white border border-blue-200'
+                  } transition-all duration-300 hover:shadow-lg`}>
                   <div className="flex items-center space-x-3">
                     <Droplets className={`w-5 h-5 ${river.isMain ? 'text-white' : 'text-blue-500'}`} />
                     <div>

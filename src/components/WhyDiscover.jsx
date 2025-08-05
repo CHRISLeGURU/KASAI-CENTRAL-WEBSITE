@@ -36,7 +36,7 @@ const WhyDiscover = () => {
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-kasai-bleu mb-4">
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-4">
                 Pourquoi découvrir le Kasaï-Central ?
               </h2>
               <h3 className="text-xl text-kasai-terre font-medium italic mb-8">
@@ -52,8 +52,8 @@ const WhyDiscover = () => {
                     key={index}
                     className="flex items-start space-x-4 p-6 rounded-2xl bg-gradient-to-r from-kasai-ivoire/30 to-transparent hover:from-kasai-ivoire/50 transition-all duration-300 hover:translate-x-2"
                   >
-                    <div className={`w-14 h-14 bg-gradient-to-r ${feature.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
-                      <Icon className="w-7 h-7 text-white" />
+                    <div className={`w-10 h-10 bg-gradient-to-r ${feature.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                      <Icon className="w-5 h-5 text-white" />
                     </div>
                     <div>
                       <h4 className="text-xl font-bold text-kasai-bleu mb-2">

@@ -45,7 +45,7 @@ const SiteFeatures = () => {
     <section className="section-padding bg-gradient-to-br from-kasai-ivoire/30 to-gray-50">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-kasai-bleu mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-6">
             Ce que vous trouverez sur ce site
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-kasai-or to-kasai-vert mx-auto rounded-full"></div>
@@ -59,8 +59,8 @@ const SiteFeatures = () => {
                 key={index}
                 className="card-modern group text-center hover:scale-105 transition-all duration-300"
               >
-                <div className={`w-20 h-20 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-10 h-10 text-white" />
+                <div className={`w-12 h-12 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300`}>
+                  <Icon className="w-6 h-6 text-white" />
                 </div>
                 
                 <h3 className="text-xl font-bold text-kasai-bleu mb-4">

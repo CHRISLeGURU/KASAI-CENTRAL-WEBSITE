@@ -45,7 +45,7 @@ const ProvinceOverview = () => {
     <section className="section-padding bg-gradient-to-br from-kasai-ivoire/50 to-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-kasai-bleu mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-kasai-bleu mb-6">
             Province du Kasaï-Central
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-kasai-or to-kasai-vert mx-auto rounded-full"></div>
@@ -59,8 +59,8 @@ const ProvinceOverview = () => {
                 key={index}
                 className="card-modern group hover:scale-105 transition-all duration-300"
               >
-                <div className={`w-16 h-16 bg-gradient-to-r ${stat.color} rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-8 h-8 text-white" />
+                <div className={`w-10 h-10 bg-gradient-to-r ${stat.color} rounded-2xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300`}>
+                  <Icon className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-kasai-bleu mb-2 text-center">
                   {stat.title}
@@ -78,7 +78,7 @@ const ProvinceOverview = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               Créée en 2015 à la suite du découpage territorial, la province du Kasaï-Central est issue de
               l'ancienne province du Kasaï-Occidental. Elle est située au centre-sud de la RDC et partage ses
-              frontières avec le Sankuru, le Lomami, le Kasaï, et la province du Kasaï-Oriental. 
+              frontières avec le Sankuru, le Lomami, le Kasaï, et la province du Kasaï-Oriental.
               <span className="font-semibold text-kasai-bleu"> C'est une terre de tradition, de travail, et d'espoir.</span>
             </p>
           </div>
