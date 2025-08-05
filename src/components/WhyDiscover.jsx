@@ -78,6 +78,7 @@ const WhyDiscover = () => {
                 </div>
                 <p className="text-lg font-medium opacity-90">
                   Image : Femme tressant du raphia ou paysage de rivière
+                  <image src=""/>
                 </p>
               </div>
             </div>

@@ -38,51 +38,52 @@ const CTA = () => {
       <div className="container-custom relative z-10">
         <div className="text-center text-white">
           {/* Badge */}
-          <div className="inline-flex items-center space-x-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8 hover:bg-white/20 transition-colors duration-300">
-            <Heart className="w-6 h-6 text-kasai-or" />
-            <span className="font-semibold text-lg">Découvrez le Kasaï-Central</span>
+          <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6 hover:bg-white/20 transition-colors duration-300">
+            <Heart className="w-4 h-4 text-kasai-or" />
+            <span className="font-medium text-sm">Découvrez le Kasaï-Central</span>
           </div>
 
           {/* Main heading */}
-          <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light mb-8 leading-tight">
+          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-light mb-6 leading-tight">
             Une province méconnue mais pleine de{' '}
             <span className="bg-gradient-to-r from-kasai-or to-yellow-400 bg-clip-text text-transparent font-medium">
               promesses
             </span>{' '}
             vous attend
           </h2>
+          <h2>teeddggd</h2>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Plongez dans l'histoire fascinante, explorez les villes authentiques et rencontrez les talents
             qui façonnent l'avenir de cette terre d'exception.
           </p>
 
           {/* Features */}
-          <div className="flex flex-wrap justify-center gap-8 mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             {features.map((feature, index) => {
               const Icon = feature.icon
               return (
                 <div
                   key={index}
-                  className="flex flex-col items-center space-y-3 p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105 min-w-[140px]"
+                  className="flex flex-col items-center space-y-2 p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105 min-w-[120px]"
                 >
-                  <Icon className="w-8 h-8 text-kasai-or" />
-                  <span className="font-medium text-center">{feature.name}</span>
+                  <Icon className="w-6 h-6 text-kasai-or" />
+                  <span className="font-medium text-center text-sm">{feature.name}</span>
                 </div>
               )
             })}
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="group bg-gradient-to-r from-kasai-terre to-orange-600 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 active:scale-95 flex items-center space-x-3 min-w-[200px] justify-center">
-              <Compass className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button className="group bg-gradient-to-r from-kasai-terre to-orange-600 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-full font-semibold text-base transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2 min-w-[180px] justify-center">
+              <Compass className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               <span>Commencer la visite</span>
             </button>
 
-            <button className="group bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 hover:border-white/50 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 active:scale-95 flex items-center space-x-3 min-w-[200px] justify-center">
-              <Download className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
+            <button className="group bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 hover:border-white/50 text-white px-6 py-3 rounded-full font-semibold text-base transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2 min-w-[180px] justify-center">
+              <Download className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               <span>Guide touristique</span>
             </button>
           </div>

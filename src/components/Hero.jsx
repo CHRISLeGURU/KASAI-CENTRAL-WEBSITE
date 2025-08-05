@@ -47,7 +47,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="animate-slide-up">
-          <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
+          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 leading-tight">
             Découvrez le{' '}
             <span className="italic font-medium bg-gradient-to-r from-kasai-or to-yellow-400 bg-clip-text text-transparent">
               cœur diamantaire
@@ -56,7 +56,7 @@ const Hero = () => {
             du Congo
           </h1>
           
-          <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed font-light">
             Le Kasaï-Central vous accueille avec ses richesses minières légendaires,
             ses traditions ancestrales et sa culture Luba authentique.
             Explorez une région où l'histoire du diamant rencontre la beauté des savanes.
@@ -68,9 +68,9 @@ const Hero = () => {
               return (
                 <button
                   key={index}
-                  className={`group bg-gradient-to-r ${button.color} ${button.hoverColor} text-white px-6 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-2xl hover:scale-105 active:scale-95 flex items-center space-x-3 min-w-[200px] backdrop-blur-sm border border-white/20`}
+                  className={`group bg-gradient-to-r ${button.color} ${button.hoverColor} text-white px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95 flex items-center space-x-2 min-w-[160px] backdrop-blur-sm border border-white/20`}
                 >
-                  <Icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                  <Icon className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
                   <span>{button.text}</span>
                 </button>
               )
@@ -86,7 +86,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating Elements */}
+      {/* Floating Elements   control phone by PC */}
       <div className="absolute top-20 left-10 animate-float">
         <div className="w-4 h-4 bg-kasai-or/30 rounded-full"></div>
       </div>
