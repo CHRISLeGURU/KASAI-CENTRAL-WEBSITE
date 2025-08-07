@@ -69,20 +69,18 @@ const WhyDiscover = () => {
             </div>
           </div>
 
-          {/* Image Placeholder */}
+          {/* Image */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-kasai-terre to-kasai-or rounded-3xl flex items-center justify-center text-white p-8 shadow-2xl">
-              <div className="text-center">
-                <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <Palette className="w-12 h-12" />
-                </div>
-                <p className="text-lg font-medium opacity-90">
-                  Image : Femme tressant du raphia ou paysage de rivière
-                  <image src=""/>
-                </p>
-              </div>
+            <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src="/images/firstIMG.png"
+                alt="Femme tressant du raphia ou paysage de rivière au Kasaï-Central"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+              {/* Overlay gradient for better text readability if needed */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            
+
             {/* Floating decorative elements */}
             <div className="absolute -top-4 -right-4 w-8 h-8 bg-kasai-vert rounded-full animate-float"></div>
             <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-kasai-or rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
