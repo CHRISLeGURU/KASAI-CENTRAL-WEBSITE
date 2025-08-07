@@ -9,7 +9,7 @@ const InteractiveMap = () => {
     { id: 2, name: 'Dibaya', position: { top: '18%', right: '8%' }, info: 'Territoire du nord-est' },
     { id: 3, name: 'Kazumba', position: { bottom: '25%', left: '12%' }, info: 'Territoire du sud-ouest' },
     { id: 4, name: 'Luiza', position: { bottom: '18%', right: '5%' }, info: 'Territoire du sud-est' },
-    { id: 5, name: ' Dimbelenge', position: { top: '42%', right: '20%' }, info: 'Territoire central-est' }
+    { id: 5, name: 'Dimbelenge', position: { top: '28%', right: '12%' }, info: 'Territoire central-est' }
   ]
 
   return (
