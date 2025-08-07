@@ -56,11 +56,18 @@ const Hero = () => {
             du Congo
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-20 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
             Le Kasaï-Central vous accueille avec ses richesses minières légendaires,
             ses traditions ancestrales et sa culture Luba authentique.
             Explorez une région où l'histoire du diamant rencontre la beauté des savanes.
           </p>
+
+          {/* Scroll Indicator */}
+          <div className="flex justify-center mb-8 animate-bounce">
+            <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+            </div>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             {buttons.map((button, index) => {
@@ -78,12 +85,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
+
       </div>
 
       {/* Floating Elements   control phone by PC */}
