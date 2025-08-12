@@ -95,6 +95,21 @@ const CTA = () => {
             <div className="flex justify-center">
               <div className="w-32 h-1 bg-gradient-to-r from-kasai-or to-kasai-vert rounded-full"></div>
             </div>
+            
+            {/* Signature */}
+            <div className="mt-6 text-center">
+              <p className="text-white/70 text-sm flex items-center justify-center gap-1 flex-wrap">
+                Built with 
+                <Heart className="w-4 h-4 text-red-500 mx-1" fill="currentColor" />
+                and patriotism for the province of Kasai by{' '}
+                <a 
+                  href="mailto:christheguru001@gmail.com" 
+                  className="text-kasai-or hover:text-yellow-400 transition-colors duration-300 font-medium underline decoration-dotted underline-offset-2"
+                >
+                  theGuru
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
