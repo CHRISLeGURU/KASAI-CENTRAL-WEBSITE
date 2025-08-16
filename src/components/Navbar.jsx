@@ -83,7 +83,7 @@ const Navbar = () => {
                 </a>
               ))}
               <button className="btn-primary w-full mt-4">
-                Planifier ma visite
+                Tukeyenu bimpe !🎉
               </button>
             </div>
           </div>

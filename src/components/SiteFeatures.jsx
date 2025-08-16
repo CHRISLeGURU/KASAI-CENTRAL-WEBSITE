@@ -1,5 +1,5 @@
 import React from 'react'
-import { BookOpen, Building, Sprout, Users, Camera, Palette } from 'lucide-react'
+import { BookOpen, Building, Sprout, Users, Globe, UserCheck } from 'lucide-react'
 
 const SiteFeatures = () => {
   const features = [
@@ -28,15 +28,15 @@ const SiteFeatures = () => {
       color: 'from-purple-500 to-purple-600'
     },
     {
-      icon: Camera,
-      title: 'Galeries photos',
-      description: 'Une collection d\'images authentiques capturant l\'essence du Kasaï-Central.',
+      icon: Globe,
+      title: 'Géographie et environnement',
+      description: 'Explorez les paysages, le climat et la diversité environnementale du Kasaï-Central.',
       color: 'from-pink-500 to-pink-600'
     },
     {
-      icon: Palette,
-      title: 'Art local',
-      description: 'L\'artisanat traditionnel et les créations contemporaines de la région.',
+      icon: UserCheck,
+      title: 'Portrait du gouverneur',
+      description: 'Découvrez le parcours et les priorités de Joseph Moïse Kambulu Nkonko, gouverneur du Kasaï-Central.',
       color: 'from-kasai-or to-yellow-500'
     }
   ]

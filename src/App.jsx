@@ -7,6 +7,7 @@ import SiteFeatures from './components/SiteFeatures'
 import InteractiveMap from './components/InteractiveMap'
 import Geography from './components/Geography'
 import History from './components/History'
+import Gouvernance from './components/Gouvernance'
 import CTA from './components/CTA'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <InteractiveMap />
       <Geography />
       <History />
+      <Gouvernance />
       <CTA />
     </div>
   )
