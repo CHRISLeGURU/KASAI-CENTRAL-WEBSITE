@@ -3,4 +3,5 @@ node_modules/
 .env
 dist/
 build/
+README-REACT.MD
 Uncaught SyntaxError: The requested module '/node_modules/.vite/deps/lucide-react.js?v=3adb28a2' does not provide an export named 'Masks' (at Hero.jsx:2:15)
